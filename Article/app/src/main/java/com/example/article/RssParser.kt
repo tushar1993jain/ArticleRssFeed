@@ -1,4 +1,5 @@
 package com.example.article
+
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 import org.xmlpull.v1.XmlPullParserFactory
@@ -8,9 +9,9 @@ import java.util.*
 
 class RssParser {
     private val rssItems = ArrayList<Item>()
-    private var rssItem : Item ?= null
+    private var rssItem: Item? = null
     private var text: String? = null
-    fun parse(inputStream: InputStream):List<Item> {
+    fun parse(inputStream: InputStream): List<Item> {
         try {
             val factory = XmlPullParserFactory.newInstance()
             factory.isNamespaceAware = true
@@ -29,10 +30,10 @@ class RssParser {
                     }
                     XmlPullParser.TEXT -> text = parser.text
                     XmlPullParser.END_TAG -> if (tagname.equals("item")) {
-                            if(rssItem!=null)
+                        if (rssItem != null)
                             rssItems.add(rssItem!!)
                         foundItem = false
-                    } else if ( foundItem && tagname.equals("title")) {
+                    } else if (foundItem && tagname.equals("title")) {
                         rssItem!!.title = text.toString()
                     } else if (foundItem && tagname.equals("link")) {
                         rssItem!!.link = text.toString()

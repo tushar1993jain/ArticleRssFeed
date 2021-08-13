@@ -17,7 +17,7 @@ class MyItemRecyclerViewAdapter(
     private val dataSet: ArrayList<Item>,
     private val cellClick: CellClickListener
 ) :
-        RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder>() {
+    RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder>() {
 
     /**
      * Provide a reference to the type of views that you are using

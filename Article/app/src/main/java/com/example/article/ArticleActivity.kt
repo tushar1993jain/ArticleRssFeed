@@ -31,10 +31,10 @@ class MainActivity1 : AppCompatActivity(), CellClickListener {
     val RSS_FEED_LINK = "https://blog.personalcapital.com/feed/?cat=3,891,890,68,28";
     var adapter: MyItemRecyclerViewAdapter? = null
     var rssItems = ArrayList<Item>()
-    var listV : RecyclerView?= null
+    var listV: RecyclerView? = null
     lateinit var imageView: ImageView
     lateinit var title: TextView
-    lateinit var desc : TextView
+    lateinit var desc: TextView
     lateinit var details: TextView
     lateinit var creator: TextView
     lateinit var rateLayout: LinearLayout
@@ -42,38 +42,38 @@ class MainActivity1 : AppCompatActivity(), CellClickListener {
     lateinit var percLayout: LinearLayout
     lateinit var progressBar: ProgressBar
 
-override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_article)
-    setSupportActionBar(findViewById(R.id.my_toolbar))
-    listV = findViewById(R.id.recycler_view)
-    imageView = findViewById(R.id.iv_image)
-    title = findViewById(R.id.title)
-    desc = findViewById(R.id.description)
-    details = findViewById(R.id.details)
-    minsTv = findViewById(R.id.tvMins)
-    creator = findViewById(R.id.creator)
-    progressBar = findViewById(R.id.progressBar)
-    rateLayout = findViewById(R.id.rateLayout)
-    percLayout = findViewById(R.id.percLayout)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_article)
+        setSupportActionBar(findViewById(R.id.my_toolbar))
+        listV = findViewById(R.id.recycler_view)
+        imageView = findViewById(R.id.iv_image)
+        title = findViewById(R.id.title)
+        desc = findViewById(R.id.description)
+        details = findViewById(R.id.details)
+        minsTv = findViewById(R.id.tvMins)
+        creator = findViewById(R.id.creator)
+        progressBar = findViewById(R.id.progressBar)
+        rateLayout = findViewById(R.id.rateLayout)
+        percLayout = findViewById(R.id.percLayout)
 
-    percLayout.visibility = View.GONE
-    minsTv.visibility = View.GONE
+        percLayout.visibility = View.GONE
+        minsTv.visibility = View.GONE
 
-    adapter = MyItemRecyclerViewAdapter(this, rssItems, this)
-    listV?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-    listV?.adapter = adapter
-    fetchDataFromRss()
+        adapter = MyItemRecyclerViewAdapter(this, rssItems, this)
+        listV?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        listV?.adapter = adapter
+        fetchDataFromRss()
 
 
+    }
 
-}
-
-    fun fetchDataFromRss(){
+    fun fetchDataFromRss() {
         progressBar.visibility = View.VISIBLE
         val url = URL(RSS_FEED_LINK)
         RssFeedFetcher(this).execute(url)
     }
+
     fun updateRV(rssItemsL: List<Item>) {
         rateLayout.visibility = View.VISIBLE
         percLayout.visibility = View.VISIBLE
@@ -88,7 +88,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
     }
 
-    fun updateFirstArticle(rssItem: Item){
+    /**
+     * @param rssItem - holds the Rss object for first article
+     * */
+    fun updateFirstArticle(rssItem: Item) {
         val transformation: Transformation = RoundedTransformation(15, 10)
         Picasso.with(this).load(Uri.parse(rssItem.content)).transform(transformation).into(
             imageView
@@ -98,13 +101,14 @@ override fun onCreate(savedInstanceState: Bundle?) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             // FROM_HTML_MODE_LEGACY is the behaviour that was used for versions below android N
             // we are using this flag to give a consistent behaviour
-            details.text =  Html.fromHtml(rssItem.encoded, Html.FROM_HTML_MODE_LEGACY);
+            details.text = Html.fromHtml(rssItem.encoded, Html.FROM_HTML_MODE_LEGACY);
         } else {
             details.text = Html.fromHtml(rssItem.encoded)
         }
-        creator.text = "By "+ rssItem.creator
+        creator.text = "By " + rssItem.creator
 
     }
+
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.action_refresh -> {
             // User chose the "Settings" item, show the app settings UI...
@@ -116,7 +120,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
             // If we got here, the user's action was not recognized.
             // Invoke the superclass to handle it.
             super.onOptionsItemSelected(item)
-        }    }
+        }
+    }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
@@ -157,6 +162,7 @@ class RssFeedFetcher(val context: MainActivity1) : AsyncTask<URL, Void, List<Ite
         }
         return rssItems
     }
+
     override fun onPostExecute(result: List<Item>?) {
         super.onPostExecute(result)
         if (result != null && !result.isEmpty()) {
