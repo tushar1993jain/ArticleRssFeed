@@ -38,6 +38,8 @@ class MainActivity1 : AppCompatActivity(), CellClickListener {
     lateinit var details: TextView
     lateinit var creator: TextView
     lateinit var rateLayout: LinearLayout
+    lateinit var minsTv: TextView
+    lateinit var percLayout: LinearLayout
     lateinit var progressBar: ProgressBar
 
 override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,9 +51,14 @@ override fun onCreate(savedInstanceState: Bundle?) {
     title = findViewById(R.id.title)
     desc = findViewById(R.id.description)
     details = findViewById(R.id.details)
+    minsTv = findViewById(R.id.tvMins)
     creator = findViewById(R.id.creator)
     progressBar = findViewById(R.id.progressBar)
     rateLayout = findViewById(R.id.rateLayout)
+    percLayout = findViewById(R.id.percLayout)
+
+    percLayout.visibility = View.GONE
+    minsTv.visibility = View.GONE
 
     adapter = MyItemRecyclerViewAdapter(this, rssItems, this)
     listV?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
@@ -69,6 +76,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
     }
     fun updateRV(rssItemsL: List<Item>) {
         rateLayout.visibility = View.VISIBLE
+        percLayout.visibility = View.VISIBLE
+        minsTv.visibility = View.VISIBLE
         if (rssItemsL != null && !rssItemsL.isEmpty()) {
             rssItems.addAll(rssItemsL)
             updateFirstArticle(rssItemsL[0])

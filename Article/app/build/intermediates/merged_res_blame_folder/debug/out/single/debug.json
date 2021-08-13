@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/layout_item_row_text.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/layout/item_row_text.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/layout_activity_article.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/layout/activity_article.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/drawable_corner_round.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/drawable/corner_round.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/layout_activity_article_detail.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/layout/activity_article_detail.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/drawable_corner_round_gray.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/drawable/corner_round_gray.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/menu_main_menu.xml.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/decimal/AndroidStudioProjects/ArticleRssFeed/Article/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    }
+]
